@@ -1,11 +1,12 @@
-import java.util.ArrayList;
+import java.util.List;
 
 public class MobilePhone {
     String myNumber;
-    ArrayList<Contact> myContacts;
+    List<Contact> myContacts;
 
 
-    public MobilePhone(String myNumber, ArrayList<Contact> myContacts) {
+
+    public MobilePhone(String myNumber, List<Contact> myContacts) {
         this.myNumber = myNumber;
         this.myContacts = myContacts;
     }
@@ -18,11 +19,11 @@ public class MobilePhone {
         this.myNumber = myNumber;
     }
 
-    public ArrayList<Contact> getMyContacts() {
+    public List<Contact> getMyContacts() {
         return myContacts;
     }
 
-    public void setMyContacts(ArrayList<Contact> myContacts) {
+    public void setMyContacts(List<Contact> myContacts) {
         this.myContacts = myContacts;
     }
 
