@@ -71,12 +71,12 @@ public class MobilePhone {
 
     }
     public int findContact (String contact){
-        if(myContacts.contains(contact)){
-
-
-            return myContacts.indexOf(contact);
+        for(Contact myContact:myContacts){
+            if (myContact.getName().equals(contact)){
+                return myContacts.indexOf(contact);
+            }
         }
-        else return -1;
+        return -1;
 
     }
     public Contact queryContact(String name){
